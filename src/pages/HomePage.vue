@@ -1,5 +1,6 @@
 <script>
 import Bookmarklet from '@/components/Bookmarklet.vue';
+import MountainBackground from '@/components/MountainBackground.vue';
 import DiscordAltIcon from '@/icons/DiscordAltIcon.vue';
 import GHLLogoIcon from '@/icons/GHLLogoIcon.vue';
 import GithubIcon from '@/icons/GithubIcon.vue';
@@ -8,6 +9,7 @@ import YoutubeIcon from '@/icons/YoutubeIcon.vue';
 
 export default {
 	components: {
+		MountainBackground,
 		Bookmarklet,
 		GHLLogoIcon,
 		GithubIcon,
@@ -22,6 +24,7 @@ export default {
 </script>
 
 <template>
+	<MountainBackground />
 	<main>
 		<section id="info">
 			<h2>GRAB Tools</h2>
@@ -151,6 +154,10 @@ export default {
 </template>
 
 <style scoped>
+main {
+	position: relative;
+	z-index: 1;
+}
 .socials {
 	display: flex;
 	flex-direction: row;
